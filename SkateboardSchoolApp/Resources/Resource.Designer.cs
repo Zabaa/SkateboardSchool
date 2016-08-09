@@ -60,20 +60,29 @@ namespace SkateboardSchoolApp
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050003
+			public const int DataHeader = 2131034115;
+			
 			// aapt resource value: 0x7f050000
 			public const int MyButton = 2131034112;
 			
+			// aapt resource value: 0x7f050005
+			public const int PassDate = 2131034117;
+			
 			// aapt resource value: 0x7f050004
-			public const int listView1 = 2131034116;
+			public const int TrickName = 2131034116;
+			
+			// aapt resource value: 0x7f050007
+			public const int listView1 = 2131034119;
 			
 			// aapt resource value: 0x7f050002
-			public const int passesList = 2131034114;
+			public const int passesExpandableList = 2131034114;
 			
 			// aapt resource value: 0x7f050001
 			public const int textView1 = 2131034113;
 			
-			// aapt resource value: 0x7f050003
-			public const int title = 2131034115;
+			// aapt resource value: 0x7f050006
+			public const int title = 2131034118;
 			
 			static Id()
 			{
@@ -95,7 +104,13 @@ namespace SkateboardSchoolApp
 			public const int PassesList = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int StudentsList = 2130903042;
+			public const int PassListGroup = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int PassListItem = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int StudentsList = 2130903044;
 			
 			static Layout()
 			{

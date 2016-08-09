@@ -19,7 +19,7 @@ namespace SkateboardSchool.DAL.Repository
                     Trick = new Trick
                     {
                         Name = "Ollie",
-                        SkillLevel = SkillLevel.Rookie2
+                        SkillLevel = SkillLevel.Rookie1
                     },
                     Date = DateTime.Now,
                     Instructor = new Instructor
@@ -38,7 +38,7 @@ namespace SkateboardSchool.DAL.Repository
                     Trick = new Trick
                     {
                         Name = "Nollie",
-                        SkillLevel = SkillLevel.Rookie2
+                        SkillLevel = SkillLevel.Rookie1
                     },
                     Date = DateTime.Now,
                     Instructor = new Instructor

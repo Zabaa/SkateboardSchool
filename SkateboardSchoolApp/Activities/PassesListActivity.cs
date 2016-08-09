@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SkateboardSchool.DAL.Repository;
+using SkateboardSchoolApp.Adapters;
 
 namespace SkateboardSchoolApp.Activities
 {
@@ -22,11 +23,10 @@ namespace SkateboardSchoolApp.Activities
             SetContentView(Resource.Layout.PassesList);
 
             var passesRepository = new PassesRepository();
-            var list = passesRepository.GetPasses().Select(p => p.Trick.Name).ToList();
+            var list = passesRepository.GetPasses().ToList();
 
-            ExpandableListView listView = FindViewById<ExpandableListView>(Resource.Id.passesList);
-            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list);
-
+            var listView = FindViewById<ExpandableListView>(Resource.Id.passesExpandableList);
+            listView.SetAdapter(new PassesExpandableListAdapter(this, list));
         }
     }
 }

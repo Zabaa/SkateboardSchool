@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Activities\PassesListActivity.cs" />
     <Compile Include="Activities\StudentsListActivity.cs" />
+    <Compile Include="Adapters\PassAdapter.cs" />
     <Compile Include="Adapters\PassesExpandableListAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -64,6 +65,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\PassesList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PassListItem.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PassListGroup.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
