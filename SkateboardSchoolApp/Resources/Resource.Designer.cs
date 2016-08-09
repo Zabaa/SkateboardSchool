@@ -63,11 +63,17 @@ namespace SkateboardSchoolApp
 			// aapt resource value: 0x7f050000
 			public const int MyButton = 2131034112;
 			
+			// aapt resource value: 0x7f050004
+			public const int listView1 = 2131034116;
+			
 			// aapt resource value: 0x7f050002
-			public const int listView1 = 2131034114;
+			public const int passesList = 2131034114;
 			
 			// aapt resource value: 0x7f050001
-			public const int title = 2131034113;
+			public const int textView1 = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int title = 2131034115;
 			
 			static Id()
 			{
@@ -86,7 +92,10 @@ namespace SkateboardSchoolApp
 			public const int Main = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int StudentsList = 2130903041;
+			public const int PassesList = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int StudentsList = 2130903042;
 			
 			static Layout()
 			{
@@ -106,6 +115,9 @@ namespace SkateboardSchoolApp
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int PassesList = 2130968579;
 			
 			// aapt resource value: 0x7f040002
 			public const int StudentProfilesList = 2130968578;

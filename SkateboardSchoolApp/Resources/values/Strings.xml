@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Lista uczniów</string>
-    <string name="ApplicationName">SkateboardSchoolApp</string>
-    <string name="StudentProfilesList">Lista uczniów</string>
+  <string name="Hello">Zaliczenia tricków</string>
+  <string name="ApplicationName">SkateboardSchoolApp</string>
+  <string name="StudentProfilesList">Lista uczniów</string>
+  <string name="PassesList">Zaliczenia tricków</string>
 </resources>

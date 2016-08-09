@@ -9,26 +9,24 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using SkateboardSchool.Domain;
 using SkateboardSchool.DAL.Repository;
 
 namespace SkateboardSchoolApp.Activities
 {
-    [Activity(Label = "StudentsListActivity")]
-    public class StudentsListActivity : Activity
+    [Activity(Label = "PassesListActivity")]
+    public class PassesListActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.StudentsList);
+            SetContentView(Resource.Layout.PassesList);
 
-            ListView listView = FindViewById<ListView>(Resource.Id.listView1);
-            
-            var studentRepository = new StudentRepository();
-            var list = studentRepository.GetStudentProfiles().Select(s => s.PersonalData.FirstName).ToList();
+            var passesRepository = new PassesRepository();
+            var list = passesRepository.GetPasses().Select(p => p.Trick.Name).ToList();
 
+            ExpandableListView listView = FindViewById<ExpandableListView>(Resource.Id.passesList);
             var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list);
-            listView.Adapter = adapter;
+
         }
     }
 }

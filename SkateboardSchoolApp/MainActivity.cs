@@ -26,7 +26,7 @@ namespace SkateboardSchoolApp
 
             button.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(StudentsListActivity));
+                var intent = new Intent(this, typeof(PassesListActivity));
                 StartActivity(intent);
             };
         }
